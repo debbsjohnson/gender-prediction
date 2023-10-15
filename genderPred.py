@@ -65,34 +65,7 @@ second_label = Label(bottom_frame, text="Provide a name and I will predict its g
 second_label.grid(row=1, column=0)
 
 
-# """below are the widgets inside the top_frame"""
-# # the name label
-# label = Label(bottom_frame, text="NAME: ", font=("Poppins 10 bold"), justify=LEFT)
-# label.place(x=4, y=10)
-
-
-# # the entry for entering the user's name
-# name_entry = Entry(bottom_frame, width=25, font=("Poppins 15 bold"))
-# name_entry.place(x=5, y=35)
-
-
-# name_label = Label(bottom_frame, text="", font=("Poppins 10 bold"))
-# name_label.place(x=5, y=70)
-
-# gender_label = Label(bottom_frame, text="", font=("Poppins 10 bold"))
-# gender_label.place(x=5, y=90)
-
-
-# probability_label = Label(bottom_frame, text="", font=("Poppins 10 bold"))
-# probability_label.place(x=5, y=110)
-
-
-# predict_button = Button(bottom_frame, text="PREDICT", bg=pink, fg=ruby, font=("Poppins 10 bold"), command=predict_gender)
-# predict_button.place(x=5, y=140)
-
-
-
-# Create a frame for the input section
+# create a frame for the input section
 input_frame = Frame(bottom_frame, width=300, height=150, bg=ruby)
 input_frame.grid(row=1, column=0)
 
@@ -105,7 +78,7 @@ name_entry.grid(row=0, column=1, padx=10, pady=10)
 predict_button = Button(input_frame, text="PREDICT", bg=pink, fg=ruby, font=("Poppins 10 bold"), command=predict_gender)
 predict_button.grid(row=1, column=0, columnspan=2, padx=14, pady=14)
 
-# Create a frame for the results
+# create a frame for the results
 result_frame = Frame(bottom_frame, width=300, height=100, bg=ruby)
 result_frame.grid(row=2, column=0)
 
